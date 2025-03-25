@@ -20,6 +20,7 @@ import { Input } from "@/components/ui/input";
 import { title } from "process";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import toast from "react-hot-toast";
 
 const formSchema = z.object({
     title: z.string().min(1, {
@@ -43,7 +44,7 @@ const CreatePage = () => {
             const response = await axios.post("/api/course", values);
             router.push(`/teacher/courses/${response.data.id}`);
         } catch {
-            console.log("Something went wrong");
+            toast.error("Something went wrong");
         }
 
     }
