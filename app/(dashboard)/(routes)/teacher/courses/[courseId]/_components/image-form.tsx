@@ -24,7 +24,10 @@ import { cn } from "@/lib/utils";
 import { Textarea } from "@/components/ui/textarea";
 import { Course } from "@prisma/client";
 import Image from "next/image";
+<<<<<<< HEAD
 import { FileUpload } from "@/components/file-upload";
+=======
+>>>>>>> 963ffde (category bar add)
 
 
 

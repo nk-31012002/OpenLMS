@@ -7,6 +7,10 @@ import { redirect } from "next/navigation";
 import { TitleForm } from "./_components/title-form";
 import { DescriptionForm } from "./_components/description-form";
 import { ImageForm } from "./_components/image-form";
+<<<<<<< HEAD
+=======
+import { CategoryForm } from "./_components/category-form";
+>>>>>>> 963ffde (category bar add)
 
 const CourseIdPage = async ({
     params
@@ -33,7 +37,10 @@ const CourseIdPage = async ({
 
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 963ffde (category bar add)
     if(!course){
         return redirect("/");
     }
@@ -79,9 +86,23 @@ const CourseIdPage = async ({
                         initialData={course}
                         courseId={course.id}
                     />
+<<<<<<< HEAD
                     <ImageForm
                         initialData={course}
                         courseId={course.id}
+=======
+                    {/* <ImageForm
+                        initialData={course}
+                        courseId={course.id}
+                    /> */}
+                    <CategoryForm
+                        initialData={course}
+                        courseId={course.id}
+                        options={categories.map((category) => ({
+                            label: category.name,
+                            value: category.id,
+                        }))}
+>>>>>>> 963ffde (category bar add)
                     />
                 </div>
             </div>
