@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-generator client {
-  provider = "prisma-client-js"
-=======
 // This is your Prisma schema file,
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
@@ -11,18 +7,14 @@ generator client {
 generator client {
   provider = "prisma-client-js"
   output   = "../lib/generated/prisma"
->>>>>>> 963ffde (category bar add)
 }
 
 datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
-<<<<<<< HEAD
-=======
 
 
->>>>>>> 963ffde (category bar add)
 model Course {
   id String @id @default(uuid())
   userId String

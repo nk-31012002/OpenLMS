@@ -43,11 +43,7 @@ export const Combobox = ({
           variant="outline"
           role="combobox"
           aria-expanded={open}
-<<<<<<< HEAD
-          className="w-[200px] justify-between"
-=======
           className="w-full justify-between"
->>>>>>> 963ffde (category bar add)
         >
           {value
             ? options.find((option) => option.value === value)?.label
@@ -55,11 +51,7 @@ export const Combobox = ({
           <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
         </Button>
       </PopoverTrigger>
-<<<<<<< HEAD
-      <PopoverContent className="w-[200px] p-0">
-=======
       <PopoverContent className="w-full p-0">
->>>>>>> 963ffde (category bar add)
         <Command>
           <CommandInput placeholder="Search option..." />
           <CommandList>
